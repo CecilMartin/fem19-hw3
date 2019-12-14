@@ -1,4 +1,4 @@
-function VolumeForce = f(x);
+function VolumeForce = f(x)
 %F   Volume force in considered domain.
 %   Y = F(X) returns values of forces at N discrete points in the considered
 %   domain. This input data has to be chosen by the user. X has dimension N
@@ -15,4 +15,4 @@ function VolumeForce = f(x);
 
 X = x(:,1); % point x-coordinate
 Y = x(:,2); % point y-coorindate
-VolumeForce = 5*pi^2*sin(2*pi*X).*sin(pi*Y);        % needs to be updated
+VolumeForce = zeros(size(X));        % needs to be updated

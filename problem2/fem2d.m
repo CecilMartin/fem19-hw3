@@ -108,7 +108,7 @@ u(FreeNodes) = A(FreeNodes,FreeNodes) \ b(FreeNodes);
 % L2 error of difference to exact solution
 L2norm = 0;
 for j = 1:size(elements3,1)
-    d = (sol(sum(coordinates(elements3(j,:),:))/3)-sum(u(elements3(j,:),:))/3)/6;
+    d = (sol_motz(sum(coordinates(elements3(j,:),:))/3)-sum(u(elements3(j,:),:))/3)/6;
     L2norm = L2norm + ...
       d'*det([1,1,1; coordinates(elements3(j,:),:)']) * d;
 end

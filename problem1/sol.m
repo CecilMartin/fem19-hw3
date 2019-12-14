@@ -1,4 +1,4 @@
-function VolumeForce = sol(x);
+function VolumeForce = sol(x)
 %   Exact solution
 %   Y = F(X) returns values of forces at N discrete points in the considered
 %   domain. This input data has to be chosen by the user. X has dimension N
